@@ -1,8 +1,26 @@
 const express=require("express");//Express Import 
-
 const fs=require('fs');
+const morgan=require('morgan');
 
 const app=express();
+
+
+//Morgan Middleware
+app.use(morgan('dev'));
+/*
+   Morgan middlewar আমাদের request log শো করে।
+   GET /help 200 4.097 ms - -
+
+
+   এটা globally set করলাম। আমরা চাইলে nidristo route এ Middleware
+   সেট করতে পারি। app.get('/',morgan,(req,res)=>{} 
+*/
+
+
+
+
+
+
 
 
 /* 
