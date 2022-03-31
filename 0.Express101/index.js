@@ -84,7 +84,7 @@ app.get('/',(req,res)=>{
 
 /*
   html file টা fs require এর মাধ্যমে send করলাম, ফলে এখন আর 
-  code এর মধ্যে `` ব্যবহার করে html code লিক্তহে হবে না। 
+  code এর মধ্যে `` ব্যবহার করে html code লিখতে হবে না। 
 */
 app.get('/about',(req,res)=>{
   fs.readFile('pages/about.html',(err,data)=>{//pages folder এর about file import করলাম 

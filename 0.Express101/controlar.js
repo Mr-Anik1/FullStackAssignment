@@ -8,6 +8,11 @@ const fs=require('fs');
 
 //rootControlar আর aboutControlar Export করে নিলাম 
 exports.rootControlar=(req,res)=>{
+    //Root Route এ একটা Error তৈরি করলাম 
+    const error=new Error(`<h1>Bad Request</h1>`);
+    error.status=404;
+    throw error;
+
     fs.readFile('pages/root.html',(err,data)=>{
         if(err){
             console.log('Error',err);
