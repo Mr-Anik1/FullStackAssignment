@@ -1,0 +1,51 @@
+GET http://localhost:4000/health
+
+###
+
+POST http://localhost:4000
+Content-Type:application/json
+
+{
+    "name":"Tonik",
+    "country":"Bangladesh"
+}
+
+
+###
+GET http://localhost:4000
+
+
+
+###
+GET http://localhost:4000/hWl9dDle
+
+
+###
+PATCH http://localhost:4000/ZJMmA18ZU
+Content-Type: application/json
+
+{
+    "name":"Valentina",
+    "country":"Russia"
+}
+
+
+###
+PUT http://localhost:4000/7KrolYi4y
+Content-Type: application/json
+
+{
+    "name":"Elte",
+    "country":"China",
+    "rank":"24"
+    
+    
+}
+
+
+###
+DELETE http://localhost:4000/7KrolYi4y
+
+
+
+
