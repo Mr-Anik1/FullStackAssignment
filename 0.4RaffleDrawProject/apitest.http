@@ -1,0 +1,70 @@
+GET http://localhost:4000/test
+
+
+###
+
+GET http://localhost:4000
+
+
+###
+POST http://localhost:4000
+Content-Type: application/json
+
+{
+    "username":"Tanik",
+    "price":50
+}
+
+###
+
+GET http://localhost:4000/t/UMkjZn-y3i
+
+###
+
+GET http://localhost:4000/u/guru
+
+
+
+###
+
+PUT http://localhost:4000/t/KSR3ZapCk
+Content-Type: application/json
+
+{
+   "username":"anik",
+   "price":100
+}
+
+
+###
+
+PUT http://localhost:4000/u/anik
+Content-Type: application/json
+
+{
+    "username":"anik",
+    "price":5
+}
+
+
+###
+
+POST http://localhost:4000/bulk
+Content-Type: application/json
+
+{
+    "username":"ru",
+    "price":100,
+    "quantity":3
+}
+
+###
+
+GET http://localhost:4000/draw?wc=5
+
+###
+
+DELETE http://localhost:4000/t/mWF1oeoXnv
+
+###
+

@@ -6,8 +6,8 @@ POST http://localhost:4000
 Content-Type:application/json
 
 {
-    "name":"Tonik",
-    "country":"Bangladesh"
+    "name":"Malek",
+    "country":"Mishor"
 }
 
 
@@ -44,7 +44,7 @@ Content-Type: application/json
 
 
 ###
-DELETE http://localhost:4000/7KrolYi4y
+DELETE http://localhost:4000/Ds8UY7Je8
 
 
 

@@ -27,7 +27,7 @@ app.delete('/:id',async(req,res)=>{
     }
     const newPlayers=players.filter(item=>item.id!=nId);
     await fs.writeFile(dblocation,JSON.stringify(newPlayers));
-    res.status(203).send();
+    res.status(204).send();
 })
 
 
@@ -119,7 +119,7 @@ app.get('/',async(req,res)=>{
 
 
 
-app.get('/health',(_req,res)=>{
+app.get('/health',(req,res)=>{
     res.status(200).json({status:'OK'});
 });
 
